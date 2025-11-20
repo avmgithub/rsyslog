@@ -5,7 +5,7 @@ COPY ./rsyslog.conf /etc/rsyslog.conf
 # WORKDIR /app
 # RUN python3 -m pip install -r requirements.txt
 # COPY ./src /app/src
-EXPOSE 514/udp
+EXPOSE 514
 #ENTRYPOINT ["python3"]
 #CMD ["src/main.py"]
 ENTRYPOINT ["rsyslogd", "-n"]
